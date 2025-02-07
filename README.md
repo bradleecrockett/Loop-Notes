@@ -1,13 +1,13 @@
-# Iteration - While loops P5JS
+# Iteration - While loops P5JS (add to your notebook)
 
 **While Loop**- a control structure that repeats a block of code as long as a specified condition is true.  
 **Repeat Condition** - a boolean expression that tells when a block of code should be repeated.  
-**Increment** - to increase (most commonly with addition or the `+=` symbol).  
 **Infinite loop** - a loop that repeats forever. Usually not a good thing…  
+**Increment** - to increase (most commonly with addition or the `+=` symbol).  
 **Decrement** - to decrease (most commonly with subtraction or the `-=` symbol). 
 
 ## Syntax
-The syntax for a while loop is shown below.
+The syntax for a while loop is shown below. 
 ```javascript
 while( repeatCondition )
 {  
@@ -24,10 +24,11 @@ while( repeatCondition )
         ellipse(x, 200, 20, 20);
         // Increment the x variable so the repeat 
         // condition eventually becomes false.
-        x = x + 50; 	
+        x = x + 100; 	
         
     }
 ```
+**Write example 1 in your notebook and step through the code by hand.**
 
 ### Example 2 - Vertical ellipses 
 ```javascript
@@ -36,7 +37,7 @@ while( repeatCondition )
     { 
     	ellipse(200, y, 20, 20);
         // decrement the variable
-    	y = y - 50;		
+    	y = y - 100;		
     }
 ```
 
@@ -61,7 +62,7 @@ Add code to example 3 to create horizontal lines. This will require you to decla
     let count = 0;	//declare and initialize a counter variable
     while(count < 10)
     { 
-    	rect(50, random(width), 10, 10);
+    	rect(random(width), random(height), 10, 10);
     	count += 1;	//increment count
     }
 ```
@@ -73,8 +74,8 @@ What was the result? How could this be avoided?
     background(0,0,0,10); //black with some transparancy
     while(count < 50)
     { 
-    stroke(255);	//white
-    point(random(width), random(height));
+        stroke(255);	//white
+        point(random(width), random(height));
         count += 1;	//increment count
     }
 ```
