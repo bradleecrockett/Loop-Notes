@@ -12,4 +12,8 @@ function setup() {
 
 function draw() {
   background(220);
+  // Your code here:
+
+
+
 }
